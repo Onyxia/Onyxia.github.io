@@ -62,7 +62,7 @@ Stages:
 ** Decouple the HttpResponse
 ** Put on backlog restructure projects, because we can do it bit by bit
 
-*: Change from object to class or trait to remove the antipattern that makes code using us hard to test
+* Change from object to class or trait to remove the antipattern that makes code using us hard to test
 
 * change the antipattern of changing the mutable response to the pretence of immutability (sadly if the underlying object isn't immutable we can do nothing)
 
@@ -122,12 +122,3 @@ class AddRequestIdHeaderFilter[M[_] : Monad, Request: HttpRequest, Response: Htt
 }
 
 {% endhighlight %}
-
-
-
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
